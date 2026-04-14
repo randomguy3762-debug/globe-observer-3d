@@ -11,11 +11,20 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: gradle
+
+      - name: Fix Capacitor Ghost Files
+        run: |
+          # This deletes the line that looks for the missing cordova file
+          sed -i '/apply from: "..\/capacitor-cordova-android-plugins\/cordova.variables.gradle"/d' android/app/capacitor.build.gradle
+          # Create a fake empty file just in case Gradle still looks for the folder
+          mkdir -p android/capacitor-cordova-android-plugins
+          touch android/capacitor-cordova-android-plugins/cordova.variables.gradle
+
       - name: Build with Gradle
         run: |
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug --stacktrace
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
