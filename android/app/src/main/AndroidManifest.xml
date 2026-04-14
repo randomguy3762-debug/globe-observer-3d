@@ -8,7 +8,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:allowBackup,android:appComponentFactory"
+        tools:replace="android:allowBackup,android:appComponentFactory,android:theme"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory">
         <activity
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
