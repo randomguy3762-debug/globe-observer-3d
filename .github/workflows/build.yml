@@ -10,14 +10,11 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-
       - name: Build with Gradle
         run: |
           cd android
           chmod +x gradlew
-          # This command tells Gradle to ignore the missing cordova files
-          ./gradlew assembleDebug -Pandroid.overridePathCheck=true --stacktrace
-          
+          ./gradlew assembleDebug
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
