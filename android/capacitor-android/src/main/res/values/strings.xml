@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="capacitor_lib_name">capacitor-android</string>
+    <string name="safe_lib_name">capacitor_library_clean</string>
 </resources>
