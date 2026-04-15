@@ -1,19 +1,23 @@
 apply plugin: 'com.android.library'
+
 android {
     namespace "com.getcapacitor.android"
     compileSdk 34
-    defaultConfig { 
-        minSdk 22 
+    
+    defaultConfig {
+        minSdk 22
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
 }
+
 dependencies {
     implementation "androidx.appcompat:appcompat:1.6.1"
     implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
     implementation "androidx.webkit:webkit:1.9.0"
     implementation "androidx.core:core:1.12.0"
 }
-// Triggering Build: Wed Apr 15 19:39:10 +06 2026
+// Final structural fix: Wed Apr 15 19:43:43 +06 2026
