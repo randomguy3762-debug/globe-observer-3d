@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Globe Observer</string>
-    <string name="title_activity_main">Globe Observer</string>
-    <string name="package_name">com.sky.globe</string>
-    <string name="custom_url_scheme">com.sky.globe</string>
+    <string name="app_name"> Globe Observer-3D</string>
+    <string name="title_activity_main"> Globe Observer-3D</string>
+    <string name="package_name">com.globeobserver.app</string>
+    <string name="custom_url_scheme">com.globeobserver.app</string>
 </resources>

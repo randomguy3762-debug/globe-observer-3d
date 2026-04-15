@@ -1,4 +1,4 @@
-package com.sky.globe;
+package com.globeobserver.app;
 
 import com.getcapacitor.BridgeActivity;
 
