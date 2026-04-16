@@ -1,5 +1,6 @@
 {
-  "appId": "com.globeobserver.app",
-  "appName": " Globe Observer-3D",
-  "webDir": "www"
+  "appId": "io.ionic.starter",
+  "appName": "Globe-Observer-3d",
+  "webDir": "public",
+  "bundledWebRuntime": false
 }
