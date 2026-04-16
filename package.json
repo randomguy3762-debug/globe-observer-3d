@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo Skip Build",
+    "build": "npm install -g n && n 22 && echo Node Upgraded",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
